@@ -1,4 +1,2 @@
-TypicalAndoiddApps
-==================
-
 Typical Android Apps
+=======================
