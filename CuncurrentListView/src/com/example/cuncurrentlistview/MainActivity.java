@@ -95,8 +95,10 @@ public class MainActivity extends Activity implements OnItemClickListener {
 			
 			@Override
 			public void onUpdateView(View view) {
-				if(((TextView)((ItemView)view).findViewById(R.id.item_text_view)).getText().equals(item.mName))
+				if(view != null){
+					if(((TextView)((ItemView)view).findViewById(R.id.item_text_view)).getText().equals(item.mName))
 					((ProgressBar)((ItemView)view).findViewById(R.id.item_progress_bar)).setProgress(item.mProgress);
+				}
 			}
 		});
 	}
