@@ -11,7 +11,7 @@ public class ItemTask implements Runnable {
 	public ItemTask(Item item,TaskStatusChangedListener callback) {
 		mItem = item;
 		mCallback = callback;
-		mCallback.onCreate();
+		mCallback.onCreate(); 
 	}
 	
 	public TaskStatusChangedListener getCallback(){
