@@ -47,8 +47,11 @@ public class CustomActivity extends TabPagerActivity<CustomPagerAdapter> impleme
 	@Override
 	protected void onResume() {
 		super.onResume();
-		if (adapter == null)
+		if (adapter == null){
+			
 			configureTabPager();
+			configureActionBar();
+		}
 
 	}
 	
